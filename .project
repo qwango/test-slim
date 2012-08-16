@@ -1,0 +1,20 @@
+<projectDescription>
+  <name>test-slim</name>
+  <comment>An archetype to start a UniversalCake project with Eclipse and PyDev. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.python.pydev.PyDevBuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.python.pydev.pythonNature</nature>
+  </natures>
+  <linkedResources>
+    <link>
+      <name>web2py.py</name>
+      <type>1</type>
+      <location>D:\web2py/web2py.py</location>
+    </link>
+  </linkedResources>
+</projectDescription>

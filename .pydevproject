@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse-pydev version="1.0"?>
+
+<pydev_project>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">Default</pydev_property>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_VERSION">python 2.7</pydev_property>
+<pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
+
+<!-- These paths were removed in a previous version because there are not in 
+the web2py path. But without them, Pydev won't do the static code analysis.
+If you find a better solution, email me. --> 
+<path>/test-slim/controllers</path>
+<path>/test-slim/models</path>
+<path>/test-slim/modules</path>
+<path>/test-slim/languages</path>
+<!-- <path>/test-slim</path>  Should I add this one? --> 
+
+</pydev_pathproperty>
+<pydev_pathproperty name="org.python.pydev.PROJECT_EXTERNAL_SOURCE_PATH">
+<path>D:\web2py</path>
+<path>D:\web2py/site-packages</path>
+</pydev_pathproperty>
+</pydev_project>

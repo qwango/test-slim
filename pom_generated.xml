@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 h
+ttp://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <properties>
+        <project.name>test-slim</project.name>
+        <web2py.folder.path>D:\web2py</web2py.folder.path>
+        <PYTHON_PROJECT_INTERPRETER>Python2.7</PYTHON_PROJECT_INTERPRETER>
+        <PYTHON_PROJECT_VERSION>python 2.5</PYTHON_PROJECT_VERSION>
+    </properties>
+    <groupId>org.voiceofaccess</groupId>
+    <artifactId>${project.name}</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>${project.name}</name>
+    <description>An archetype to start a UniversalCake project with Eclipse and PyDev.</description>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <version>2.8</version>
+                <configuration>
+                    <buildcommands>
+                        <buildcommand> org.python.pydev.PyDevBuilder</buildcommand>
+                    </buildcommands>
+                    
+                    <projectnatures>
+                        <projectnature>org.python.pydev.pythonNature</projectnature>
+                    </projectnatures>
+                    
+                    <linkedResources> 
+                       <linkedResource> 
+                           <name>web2py.py</name>
+                           <type>1</type> 
+                           <location>${web2py.folder.path}/web2py.py</location>
+                       </linkedResource>
+                    </linkedResources>
+                    
+                    <additionalConfig>
+                        <file>
+                            <name>.pydevproject</name>
+                            <content>
+                                <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse-pydev version="1.0"?>
+
+<pydev_project>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">${PYTHON_PROJECT_INTERPRETER}</pydev_property>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_VERSION">${PYTHON_PROJECT_VERSION}</pydev_property>
+<pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
+
+<!-- These paths were removed in a previous version because there are not in 
+the web2py path. But without them, Pydev won't do the static code analysis.
+If you find a better solution, email me. --> 
+<path>/${project.name}/controllers</path>
+<path>/${project.name}/models</path>
+<path>/${project.name}/modules</path>
+<path>/${project.name}/languages</path>
+<!-- <path>/${project.name}</path>  Should I add this one? --> 
+
+</pydev_pathproperty>
+<pydev_pathproperty name="org.python.pydev.PROJECT_EXTERNAL_SOURCE_PATH">
+<path>${web2py.folder.path}</path>
+<path>${web2py.folder.path}/site-packages</path>
+</pydev_pathproperty>
+</pydev_project>
+]]>
+                            </content>
+                        </file>
+                    </additionalConfig>
+                    
+                </configuration>
+            </plugin>
+        </plugins>
+        
+    </build>
+</project>
