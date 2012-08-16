@@ -1,5 +1,6 @@
 *.pyc
 *.pid
+private
 cache.lock
 cache.shelve*
 *.bak
