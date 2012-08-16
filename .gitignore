@@ -1,0 +1,15 @@
+*.pyc
+*.pid
+cache.lock
+cache.shelve*
+*.bak
+databases
+*.log
+*.sqlite
+sessions
+*.pyd
+*.exe
+*.dll
+tcl
+cron.master
+library.zip
